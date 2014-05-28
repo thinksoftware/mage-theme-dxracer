@@ -1,0 +1,51 @@
+<div class="homepage">
+	
+	<div id="slider">
+		<div class="slidercontrolwr-left">
+			<div class="slidercontrol">
+				<a href="#" class="aprev" title="Previous" onClick="my_glider.previous();return false;">Previous</a>
+			</div>
+		</div>
+		<div class="slidercontrolwr-right">
+			<div class="slidercontrol">
+				<a href="#" class="anext" title="Next" onClick="my_glider.next();return false">next</a>
+			</div>	
+		</div>
+	    <div class="scroller">
+	    	<div class="content">
+					<div class="section" id="section1">
+						<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('dxracer-home-slider3')->toHtml() ?>
+	    		</div>
+					<div class="section" id="section2">
+						<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('dxracer-home-slider1')->toHtml() ?>
+	    		</div>
+	    		<div class="section" id="section3">
+	    			<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('dxracer-home-slider2')->toHtml() ?>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+	<script src="<?php echo $this->getSkinUrl('js/') ?>glider.js" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf-8">
+		var my_glider = new Glider('slider', {duration:1, autoGlide: true, frequency: 5, initialSection: 'section1'});
+	</script>
+	
+	<div class="home-right">
+		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('dxracer-home-topbox')->toHtml() ?>
+	</div>
+	<div class="clearer"></div>
+	
+	<div class="content">
+		<h3>DXRacer, Better Products For Gaming &amp; Working</h3>
+		<p>People work better when ergonomic principles are applied at their place of work. Increased comfort and health means better productivity. People’s work patterns can result in unhealthy habits being formed that lead to pain or discomfort. Introducing a few changes into the work environment with ergonomic products can make a huge difference in productivity and comfort. Ergonomics makes a difference.</p>
+
+		<p>DXRacer chairs are manufactured by high and exact standards. The level of comfort and refinement which these chairs offer is unrivalled amongst other office and gaming chairs. A chair that was originally conceived to heighten the gaming experience, has become your seat of choice when working, watching a home movie, or getting into a game as you’ve never experienced it before.</p>
+
+		<p>Unlike most office chairs on the market, the DXRacer chair has a higher backrest, that supports your entire spinal column from your pelvis to your neck. The chair offers a very stable metal star base that is adjustable via a gas spring allowing the user to adjust it for varying heights of office or computer desks. It also includes a tilt mechanism with a standard lock function so the back can be lowered down to a full 180 degreesand set to lock at any angle. Functions include 8-position adjustable armrests covered with a soft pad for comfort, so the user is protected from a shoulder slant or Kyphosis. All our chairs come with a headrest cushion as well as a lumbar cushion that is height adjustable as desired (for added spinal columnsupport).</p>
+
+		<p>Styles of chair may be chosen to match the décor of your home or office, the nature of your work, or personal preference.</p>
+	</div>
+
+	<div class="clearer"></div>
+
+</div>

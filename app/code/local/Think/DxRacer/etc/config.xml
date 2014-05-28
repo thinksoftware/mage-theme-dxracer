@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+
+	<modules>
+		<Think_DxRacer>
+			<version>0.1.0</version>
+		</Think_DxRacer>
+	</modules>
+	
+	 <global>
+	 	<blocks>
+    		<dxracer>
+				<class>DxRacer_Setup_Block</class>
+    		</dxracer>
+    	</blocks>
+    	<resources>
+    	    <dxracer_setup>
+    	        <setup>
+    	            <module>Think_DxRacer</module>
+				  <class>Mage_Eav_Model_Entity_Setup</class>
+				</setup>
+				<connection>
+				  <use>default_setup</use>
+				</connection>
+    	    </dxracer_setup>
+    	</resources>
+     </global>    
+</config>
